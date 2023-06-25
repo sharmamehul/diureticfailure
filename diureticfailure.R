@@ -32,6 +32,8 @@ auc <- performance(pred, measure = "auc")
 auc <- auc@y.values[[1]]
 auc
 
+
+# use variables from stepwise
 test <- glm(diureticdata_clean_forR$Homedosemultiplier ~ diureticdata_clean_forR$Age + diureticdata_clean_forR$Gender + 
               diureticdata_clean_forR$HRonadmission +
               diureticdata_clean_forR$EF + diureticdata_clean_forR$CAD + diureticdata_clean_forR$PriorPCICABG +
